@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteKeywords, siteUrl } from "@/lib/site";
@@ -15,6 +16,9 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 /** Set in the deployment environment once the property is claimed on Baidu. */
 const BAIDU_VERIFICATION = process.env.NEXT_PUBLIC_BAIDU_SITE_VERIFICATION;
+
+/** One container serves all four hostnames; tags filter on `Page Hostname` in GTM. */
+const GTM_ID = "GTM-NJHTWTCL";
 
 export function generateStaticParams() {
   return ALL_SITES.flatMap((site) => routing.locales.map((locale) => ({ site: site.id, locale })));
@@ -87,6 +91,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
