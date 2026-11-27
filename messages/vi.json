@@ -284,7 +284,7 @@
   },
   "products": {
     "heading": "Sản phẩm chúng tôi tự làm và tự vận hành",
-    "lede": "Ba ứng dụng và một blog kỹ thuật của chính chúng tôi. Chúng tôi tự chịu chi phí vận hành chúng — cách trung thực nhất để cho thấy mình làm ra được sản phẩm và giữ nó sống.",
+    "lede": "Năm ứng dụng và một blog kỹ thuật của chính chúng tôi. Chúng tôi tự chịu chi phí vận hành chúng — cách trung thực nhất để cho thấy mình làm ra được sản phẩm và giữ nó sống.",
     "ctaLabel": "Tìm hiểu thêm về sản phẩm",
     "items": [
       {
@@ -301,21 +301,6 @@
         ],
         "href": "https://smartfintrack.com",
         "host": "smartfintrack.com"
-      },
-      {
-        "key": "tuvidauso",
-        "name": "Tử Vi Đẩu Số",
-        "blurb": "Lập lá số tử vi từ ngày giờ sinh — dương lịch hoặc âm lịch, có hỗ trợ tháng nhuận — an sao vào mười hai cung kèm chính tinh và ngũ hành, rồi luận giải chi tiết bằng AI.",
-        "price": "Lập lá số miễn phí; đăng nhập để lưu lá số",
-        "languages": "Tiếng Việt / English",
-        "features": [
-          "Lập lá số từ ngày giờ sinh",
-          "Dương lịch hoặc âm lịch, hỗ trợ tháng nhuận",
-          "Mười hai cung, chính tinh, ngũ hành",
-          "Luận giải chi tiết bằng AI"
-        ],
-        "href": "https://tuvidauso.kingnnt.org",
-        "host": "tuvidauso.kingnnt.org"
       },
       {
         "key": "course",
@@ -346,6 +331,51 @@
         ],
         "href": "https://cms.kingnnt.org",
         "host": "cms.kingnnt.org"
+      },
+      {
+        "key": "store",
+        "name": "KingNNT Store",
+        "blurb": "Cửa hàng trực tuyến bán sản phẩm số và hàng vật lý, kèm các bài gợi ý đồ dùng dẫn tới đúng món chúng tôi đang dùng. Giá tính bằng VND, sản phẩm số được giao ngay khi thanh toán xong.",
+        "price": "Xem miễn phí",
+        "languages": "Tiếng Việt / English",
+        "features": [
+          "Sản phẩm số và hàng vật lý trong một cửa hàng",
+          "Sản phẩm số giao ngay sau khi thanh toán",
+          "Bài gợi ý đồ dùng kèm link affiliate",
+          "Lọc theo loại sản phẩm và giá"
+        ],
+        "href": "https://store.kingnnt.org",
+        "host": "store.kingnnt.org"
+      },
+      {
+        "key": "pay",
+        "name": "KingNNT Pay",
+        "blurb": "Cổng thanh toán VietQR. Một lệnh gọi API tạo giao dịch và trả về trang thanh toán có mã QR điền sẵn số tiền; khoản chuyển khoản được tự động khớp với đơn hàng và server của bạn được báo qua webhook có chữ ký.",
+        "price": "API key theo dự án",
+        "languages": "Tiếng Việt / English",
+        "features": [
+          "Chuyển khoản qua VietQR, quét bằng mọi app ngân hàng",
+          "Tự động đối soát, không cần khớp tay",
+          "Webhook ký Ed25519, tự gửi lại khi lỗi",
+          "Mỗi đơn một giao dịch, gọi lại an toàn"
+        ],
+        "href": "https://payment.kingnnt.org",
+        "host": "payment.kingnnt.org"
+      },
+      {
+        "key": "llm",
+        "name": "KingNNT LLM",
+        "blurb": "Hệ thống router API key cho các mô hình AI. Một virtual key truy cập được cả mô hình Claude và GPT qua cùng một gateway, có budget và giới hạn riêng, dùng được với Claude Code, Codex CLI, các SDK và mọi tool hỗ trợ base URL tương thích OpenAI.",
+        "price": "Cấp key",
+        "languages": "Tiếng Việt / English",
+        "features": [
+          "Mô hình Claude và GPT sau một endpoint",
+          "Virtual key với budget và giới hạn riêng",
+          "Theo dõi usage của từng key",
+          "Hướng dẫn cài cho Claude Code, Codex CLI và SDK"
+        ],
+        "href": "https://llm.kingnnt.org",
+        "host": "llm.kingnnt.org"
       }
     ]
   },
@@ -2024,8 +2054,8 @@
       "navLabel": "Sản phẩm",
       "title": "Sản phẩm",
       "metaTitle": "Sản phẩm — Phần mềm do SofinWave tự làm và vận hành",
-      "metaDescription": "SofinWave tự làm và vận hành bốn sản phẩm: SmartFinTrack — hệ thống quản lý tài chính cá nhân, Tử Vi Đẩu Số — công cụ lập lá số và luận giải bằng AI, KingNNT Course — nền tảng học AI và lập trình trực tuyến, và KingNNT Blog — sổ tay kỹ thuật về hệ thống backend.",
-      "lede": "SofinWave tự làm và vận hành bốn sản phẩm của chính mình: SmartFinTrack — hệ thống quản lý tài chính cá nhân miễn phí, Tử Vi Đẩu Số — công cụ lập lá số tử vi và luận giải bằng AI, KingNNT Course — nền tảng học trực tuyến với các khóa AI và lập trình thực hành, và KingNNT Blog — nơi kỹ sư của chúng tôi viết về backend và hệ thống AI agent. Chúng do cùng đội ngũ làm ra, theo đúng tiêu chuẩn chúng tôi áp dụng cho phần mềm của khách hàng.",
+      "metaDescription": "SofinWave tự làm và vận hành sáu sản phẩm: SmartFinTrack — quản lý tài chính cá nhân, KingNNT Course — học AI và lập trình trực tuyến, KingNNT Blog — sổ tay kỹ thuật, KingNNT Store — cửa hàng và gợi ý đồ dùng, KingNNT Pay — cổng thanh toán VietQR, và KingNNT LLM — router API key cho AI.",
+      "lede": "SofinWave tự làm và vận hành sáu sản phẩm của chính mình: SmartFinTrack — hệ thống quản lý tài chính cá nhân miễn phí, KingNNT Course — nền tảng học trực tuyến với các khóa AI và lập trình thực hành, KingNNT Blog — nơi kỹ sư của chúng tôi viết về backend và hệ thống AI agent, KingNNT Store — cửa hàng trực tuyến kèm gợi ý đồ dùng, KingNNT Pay — cổng thanh toán VietQR tự động đối soát chuyển khoản, và KingNNT LLM — router một API key tới các mô hình Claude và GPT. Chúng do cùng đội ngũ làm ra, theo đúng tiêu chuẩn chúng tôi áp dụng cho phần mềm của khách hàng.",
       "sections": [
         {
           "heading": "SmartFinTrack — quản lý tài chính cá nhân",
@@ -2037,17 +2067,6 @@
             "Báo cáo và biểu đồ"
           ],
           "links": [{ "href": "https://smartfintrack.com", "label": "smartfintrack.com" }]
-        },
-        {
-          "heading": "Tử Vi Đẩu Số — lập lá số và luận giải bằng AI",
-          "body": "Tử Vi Đẩu Số an sao vào mười hai cung dựa trên ngày giờ sinh. Công cụ lập lá số tự động — dương lịch hoặc âm lịch, có hỗ trợ tháng nhuận — hiển thị mười hai cung kèm chính tinh và ngũ hành, rồi đưa ra luận giải chi tiết bằng AI. Lập lá số hoàn toàn miễn phí; đăng nhập để lưu lá số và xem luận giải chi tiết bằng AI. Có tiếng Việt và tiếng Anh.",
-          "bullets": [
-            "Lập lá số từ ngày giờ sinh",
-            "Dương lịch hoặc âm lịch, hỗ trợ tháng nhuận",
-            "Mười hai cung, chính tinh, ngũ hành",
-            "Luận giải chi tiết bằng AI"
-          ],
-          "links": [{ "href": "https://tuvidauso.kingnnt.org", "label": "tuvidauso.kingnnt.org" }]
         },
         {
           "heading": "KingNNT Course — khóa học AI và lập trình thực hành",
@@ -2072,6 +2091,39 @@
           "links": [{ "href": "https://cms.kingnnt.org", "label": "cms.kingnnt.org" }]
         },
         {
+          "heading": "KingNNT Store — cửa hàng và gợi ý đồ dùng",
+          "body": "Cửa hàng trực tuyến cho các sản phẩm số và hàng vật lý chúng tôi làm ra, giá tính bằng VND. Sản phẩm số được giao ngay khi thanh toán xong; hàng vật lý được gửi đi. Song song với cửa hàng là các bài gợi ý đồ dùng — danh sách ngắn, chọn lọc những thiết bị và vật dụng hằng ngày chúng tôi thực sự dùng, kèm link affiliate tới nơi mua. Xem cửa hàng không cần tài khoản, có tiếng Việt và tiếng Anh.",
+          "bullets": [
+            "Sản phẩm số và hàng vật lý trong một cửa hàng",
+            "Sản phẩm số giao ngay sau khi thanh toán",
+            "Bài gợi ý đồ dùng kèm link affiliate",
+            "Lọc theo loại sản phẩm và giá"
+          ],
+          "links": [{ "href": "https://store.kingnnt.org", "label": "store.kingnnt.org" }]
+        },
+        {
+          "heading": "KingNNT Pay — cổng thanh toán VietQR",
+          "body": "Cổng thanh toán riêng để nhận chuyển khoản ngân hàng tại Việt Nam. Server của bạn tạo giao dịch qua API với mã đơn và số tiền, nhận về link thanh toán; khách quét mã VietQR đã điền sẵn số tiền và mã thanh toán bằng bất kỳ app ngân hàng nào. Khi tiền về, giao dịch được tự động khớp với đơn hàng và webhook payment.succeeded ký bằng Ed25519 được gửi tới server của bạn, tự gửi lại nếu lỗi. Mỗi đơn ứng với một giao dịch nên gọi lại không bị trùng; có thể giới hạn return host và IP được gọi, còn các khoản chuyển không khớp được đưa vào hàng chờ xét duyệt riêng. Dự án và API key do quản trị viên tạo.",
+          "bullets": [
+            "Chuyển khoản qua VietQR, quét bằng mọi app ngân hàng",
+            "Tự động đối soát, không cần khớp tay",
+            "Webhook ký Ed25519, tự gửi lại khi lỗi",
+            "Mỗi đơn một giao dịch, gọi lại an toàn"
+          ],
+          "links": [{ "href": "https://payment.kingnnt.org", "label": "payment.kingnnt.org" }]
+        },
+        {
+          "heading": "KingNNT LLM — router API key cho các mô hình AI",
+          "body": "Một gateway đứng giữa các tool AI và nhà cung cấp mô hình. Mỗi người dùng nhận một virtual key từ quản trị viên, có budget và giới hạn riêng, và chỉ với key đó truy cập được cả mô hình Claude của Anthropic lẫn GPT của OpenAI qua cùng một endpoint. Dùng được với Claude Code và Codex CLI, với SDK chính thức và HTTP thuần, và với mọi extension editor hay app chat hỗ trợ base URL tương thích OpenAI. Usage được theo dõi theo từng key, hướng dẫn cài đặt có tiếng Việt và tiếng Anh.",
+          "bullets": [
+            "Mô hình Claude và GPT sau một endpoint",
+            "Virtual key với budget và giới hạn riêng",
+            "Theo dõi usage của từng key",
+            "Hướng dẫn cài cho Claude Code, Codex CLI và SDK"
+          ],
+          "links": [{ "href": "https://llm.kingnnt.org", "label": "llm.kingnnt.org" }]
+        },
+        {
           "heading": "Vì sao chúng tôi tự làm sản phẩm",
           "body": "Lời khuyên tư vấn thì dễ đưa ra, nhưng sống chung với nó mới tốn kém. Tự vận hành ứng dụng của mình nghĩa là chúng tôi gánh đúng hệ quả của những gì mình khuyên khách — từ khâu triển khai, báo lỗi, đến chi phí duy trì lâu sau ngày ra mắt. Sản phẩm do chính đội ngũ đó làm, trên cùng nền tảng công nghệ và cùng tiêu chuẩn với dự án khách hàng — đó là lý do chúng là bằng chứng chứ không phải đồ trang trí."
         }
@@ -2079,11 +2131,11 @@
       "faq": [
         {
           "question": "Sản phẩm của SofinWave có miễn phí không?",
-          "answer": "SmartFinTrack dùng miễn phí, và việc lập lá số trên Tử Vi Đẩu Số cũng miễn phí. Trên KingNNT Course, các bài học mở được học thử miễn phí; mỗi khóa học đầy đủ mua một lần và học trọn đời. KingNNT Blog đọc miễn phí."
+          "answer": "SmartFinTrack dùng miễn phí. Trên KingNNT Course, các bài học mở được học thử miễn phí; mỗi khóa học đầy đủ mua một lần và học trọn đời. KingNNT Blog đọc miễn phí, KingNNT Store xem miễn phí — bạn chỉ trả tiền cho món mình mua. KingNNT Pay và KingNNT LLM không có đăng ký tự phục vụ: quản trị viên cấp API key riêng cho từng dự án hoặc người dùng."
         },
         {
           "question": "Tôi có cần tài khoản không?",
-          "answer": "SmartFinTrack cần tài khoản, vì nó lưu chính dữ liệu tài chính của bạn. Tử Vi Đẩu Số lập được lá số mà không cần đăng nhập; đăng nhập để lưu lá số và xem luận giải chi tiết bằng AI. KingNNT Course cần tài khoản để đăng ký khóa học và quay lại học tiếp. KingNNT Blog đọc được mà không cần tài khoản."
+          "answer": "SmartFinTrack cần tài khoản, vì nó lưu chính dữ liệu tài chính của bạn. KingNNT Course cần tài khoản để đăng ký khóa học và quay lại học tiếp. KingNNT Blog đọc được và KingNNT Store xem được mà không cần tài khoản. KingNNT Pay và KingNNT LLM dùng API key do quản trị viên cấp."
         },
         {
           "question": "SofinWave có nhận làm sản phẩm tương tự cho chúng tôi không?",

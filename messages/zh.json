@@ -284,7 +284,7 @@
   },
   "products": {
     "heading": "我们自主开发和运营的产品",
-    "lede": "三款我们自己的应用程序，外加一个工程博客。我们自己承担运营成本，这是展示我们能够交付软件并让它持续运营的唯一诚实的方式。",
+    "lede": "五款我们自己的应用程序，外加一个工程博客。我们自己承担运营成本，这是展示我们能够交付软件并让它持续运营的唯一诚实的方式。",
     "ctaLabel": "了解更多产品信息",
     "items": [
       {
@@ -296,21 +296,6 @@
         "features": ["分类收支", "每月预算与限额", "资产和投资", "报告和图表"],
         "href": "https://smartfintrack.com",
         "host": "smartfintrack.com"
-      },
-      {
-        "key": "tuvidauso",
-        "name": "Tử Vi Đẩu Số",
-        "blurb": "根据出生日期和时间为紫微斗数排盘——支持公历或农历，包括闰月——展示十二宫及其主星与五行，随后由 AI 提供详细解读。",
-        "price": "排盘免费；登录后可保存命盘",
-        "languages": "越南语 / 英语",
-        "features": [
-          "从出生日期和时间排盘",
-          "支持公历或农历，包括闰月",
-          "十二宫、主星、五行",
-          "AI 详细解读"
-        ],
-        "href": "https://tuvidauso.kingnnt.org",
-        "host": "tuvidauso.kingnnt.org"
       },
       {
         "key": "course",
@@ -341,6 +326,51 @@
         ],
         "href": "https://cms.kingnnt.org",
         "host": "cms.kingnnt.org"
+      },
+      {
+        "key": "store",
+        "name": "KingNNT Store",
+        "blurb": "一家销售数字产品和实物商品的网店，并附有好物推荐指南，链接到我们自己真正在用的物品。价格以越南盾计，数字商品在付款完成后立即交付。",
+        "price": "免费浏览",
+        "languages": "越南语 / 英语",
+        "features": [
+          "数字产品与实物商品同在一个店铺",
+          "数字商品付款后立即交付",
+          "附联盟链接的好物推荐指南",
+          "按商品类型和价格筛选"
+        ],
+        "href": "https://store.kingnnt.org",
+        "host": "store.kingnnt.org"
+      },
+      {
+        "key": "pay",
+        "name": "KingNNT Pay",
+        "blurb": "一个 VietQR 支付网关。一次 API 调用即可创建付款，并返回预填金额二维码的收银页面；银行转账会自动匹配到对应订单，并通过签名 webhook 通知你的服务器。",
+        "price": "按项目发放 API 密钥",
+        "languages": "越南语 / 英语",
+        "features": [
+          "通过 VietQR 银行转账，任何银行 App 均可扫码",
+          "自动对账，无需人工核对",
+          "Ed25519 签名的 webhook，失败自动重试",
+          "每个订单一笔付款，可安全重试"
+        ],
+        "href": "https://payment.kingnnt.org",
+        "host": "payment.kingnnt.org"
+      },
+      {
+        "key": "llm",
+        "name": "KingNNT LLM",
+        "blurb": "一个面向 AI 模型的 API 密钥路由系统。一个虚拟密钥即可通过同一网关访问 Claude 和 GPT 模型，并拥有独立的预算和限额，可用于 Claude Code、Codex CLI、各类 SDK，以及任何支持 OpenAI 兼容 base URL 的工具。",
+        "price": "发放密钥",
+        "languages": "越南语 / 英语",
+        "features": [
+          "Claude 与 GPT 模型共用一个端点",
+          "虚拟密钥各有独立预算和限额",
+          "按密钥跟踪用量",
+          "提供 Claude Code、Codex CLI 和 SDK 的配置指南"
+        ],
+        "href": "https://llm.kingnnt.org",
+        "host": "llm.kingnnt.org"
       }
     ]
   },
@@ -1993,25 +2023,14 @@
       "navLabel": "产品",
       "title": "产品",
       "metaTitle": "产品——SofinWave 自主开发和运营的软件",
-      "metaDescription": "SofinWave 自主开发和运营四款产品：SmartFinTrack——个人财务管理工具；Tử Vi Đẩu Số——通过 AI 生成并解读紫微斗数命盘；KingNNT Course——应用 AI 与编程的在线学习平台；以及 KingNNT Blog——关于后端系统的工程笔记。",
-      "lede": "SofinWave 自主开发和运营四款产品：SmartFinTrack，一款免费的个人财务管理工具；Tử Vi Đẩu Số，通过 AI 生成并解读紫微斗数命盘；KingNNT Course，一个提供 AI 与编程实践课程的在线学习平台；以及 KingNNT Blog，我们的工程师撰写后端与 AI 智能体系统文章的地方。它们由同一支团队打造，遵循我们为客户开发软件时所用的同一套标准。",
+      "metaDescription": "SofinWave 自主开发和运营六款产品：SmartFinTrack——个人财务管理工具；KingNNT Course——在线学习平台；KingNNT Blog——工程笔记；KingNNT Store——附好物推荐的网店；KingNNT Pay——VietQR 支付网关；以及 KingNNT LLM——AI 模型的 API 密钥路由。",
+      "lede": "SofinWave 自主开发和运营六款产品：SmartFinTrack，一款免费的个人财务管理工具；KingNNT Course，一个提供 AI 与编程实践课程的在线学习平台；KingNNT Blog，我们的工程师撰写后端与 AI 智能体系统文章的地方；KingNNT Store，一家附有精选好物推荐的网店；KingNNT Pay，一个自动对账银行转账的 VietQR 支付网关；以及 KingNNT LLM，用一个 API 密钥路由到 Claude 和 GPT 模型。它们由同一支团队打造，遵循我们为客户开发软件时所用的同一套标准。",
       "sections": [
         {
           "heading": "SmartFinTrack——个人财务管理",
           "body": "一个能看清钱究竟花到哪里去的地方。你按分类记录收入和支出，为每个分类设定当月额度，记录持有的资产和投资，然后通过报告和图表回顾全貌。免费使用，界面提供越南语和英语。",
           "bullets": ["按分类的收入和支出", "按月度的预算和限额", "资产和投资", "报告和图表"],
           "links": [{ "href": "https://smartfintrack.com", "label": "smartfintrack.com" }]
-        },
-        {
-          "heading": "Tử Vi Đẩu Số——排盘与 AI 解读",
-          "body": "紫微斗数依据出生日期和时间，将星曜安入十二宫。该工具会自动完成排盘——支持公历或农历，包括闰月——展示十二宫及其主星与五行，再给出详细的 AI 解读。排盘免费；登录后可保存命盘并查看详细的 AI 解读。提供越南语和英语。",
-          "bullets": [
-            "从出生日期和时间排盘",
-            "支持公历或农历，包括闰月",
-            "十二宫、主星、五行",
-            "AI 详细解读"
-          ],
-          "links": [{ "href": "https://tuvidauso.kingnnt.org", "label": "tuvidauso.kingnnt.org" }]
         },
         {
           "heading": "KingNNT Course——AI 与编程实践课程",
@@ -2036,6 +2055,39 @@
           "links": [{ "href": "https://cms.kingnnt.org", "label": "cms.kingnnt.org" }]
         },
         {
+          "heading": "KingNNT Store——网店与好物推荐",
+          "body": "一家销售我们自己制作的数字产品和实物商品的网店，以越南盾计价。数字商品在付款完成后立即交付；实物商品会寄出。网店旁边还有好物推荐指南——简短精选的清单，列出我们真正在用的设备和日常用品，并通过联盟链接指向购买渠道。无需账号即可浏览，提供越南语和英语。",
+          "bullets": [
+            "数字产品与实物商品同在一个店铺",
+            "数字商品付款后立即交付",
+            "附联盟链接的好物推荐指南",
+            "按商品类型和价格筛选"
+          ],
+          "links": [{ "href": "https://store.kingnnt.org", "label": "store.kingnnt.org" }]
+        },
+        {
+          "heading": "KingNNT Pay——VietQR 支付网关",
+          "body": "我们自己的网关，用于在越南接收银行转账。你的服务器通过 API 用订单号和金额创建付款，并获得收银链接；顾客用任何银行 App 扫描预填金额和付款码的 VietQR 二维码。转账到账后会自动匹配到订单，并向你的服务器发送以 Ed25519 签名的 payment.succeeded webhook，失败时自动重试。每个订单对应一笔付款，因此重试是安全的；可以限制返回域名和调用 IP，无法匹配的转账会进入单独的审核队列。项目和 API 密钥由管理员创建。",
+          "bullets": [
+            "通过 VietQR 银行转账，任何银行 App 均可扫码",
+            "自动对账，无需人工核对",
+            "Ed25519 签名的 webhook，失败自动重试",
+            "每个订单一笔付款，可安全重试"
+          ],
+          "links": [{ "href": "https://payment.kingnnt.org", "label": "payment.kingnnt.org" }]
+        },
+        {
+          "heading": "KingNNT LLM——AI 模型的 API 密钥路由",
+          "body": "一个位于 AI 工具与模型提供商之间的网关。每位用户从管理员处获得一个虚拟密钥，拥有独立的预算和限额，仅凭这一个密钥即可通过同一端点访问 Anthropic 的 Claude 和 OpenAI 的 GPT 模型。它适用于 Claude Code 和 Codex CLI、官方 SDK 和普通 HTTP 调用，以及任何支持 OpenAI 兼容 base URL 的编辑器扩展或聊天应用。每个密钥的用量都会被跟踪，配置指南提供越南语和英语版本。",
+          "bullets": [
+            "Claude 与 GPT 模型共用一个端点",
+            "虚拟密钥各有独立预算和限额",
+            "按密钥跟踪用量",
+            "提供 Claude Code、Codex CLI 和 SDK 的配置指南"
+          ],
+          "links": [{ "href": "https://llm.kingnnt.org", "label": "llm.kingnnt.org" }]
+        },
+        {
           "heading": "为什么我们要自主开发产品",
           "body": "咨询建议提出容易，承受后果却代价高昂。自主运营应用意味着我们要承担自己建议的后果——部署、缺陷报告，以及产品上线很久之后持续维护的成本。这些产品由承接客户项目的同一批工程师，在同一套技术栈上，按照同样的标准打造，这正是它们成为证据而非摆设的原因。"
         }
@@ -2043,11 +2095,11 @@
       "faq": [
         {
           "question": "SofinWave 的产品免费吗？",
-          "answer": "SmartFinTrack 免费使用，Tử Vi Đẩu Số 排盘也是免费的。KingNNT Course 的公开课时可以免费试学；每门完整课程一次购买，终身访问。KingNNT Blog 免费阅读。"
+          "answer": "SmartFinTrack 免费使用。KingNNT Course 的公开课时可以免费试学；每门完整课程一次购买，终身访问。KingNNT Blog 免费阅读，KingNNT Store 免费浏览——你只需为购买的商品付费。KingNNT Pay 和 KingNNT LLM 不提供自助注册：由管理员为每个项目或用户发放独立的 API 密钥。"
         },
         {
           "question": "我需要账号吗？",
-          "answer": "SmartFinTrack 需要账号，因为它存储的是你自己的财务记录。Tử Vi Đẩu Số 无需登录即可排盘；登录后可以保存命盘并查看详细的 AI 解读。KingNNT Course 需要账号才能报名课程并随时回来继续学习。KingNNT Blog 无需账号即可阅读。"
+          "answer": "SmartFinTrack 需要账号，因为它存储的是你自己的财务记录。KingNNT Course 需要账号才能报名课程并随时回来继续学习。KingNNT Blog 无需账号即可阅读，KingNNT Store 无需账号即可浏览。KingNNT Pay 和 KingNNT LLM 通过管理员发放的 API 密钥使用。"
         },
         {
           "question": "SofinWave 能为我们开发类似的产品吗？",
