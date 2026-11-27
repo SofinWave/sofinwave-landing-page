@@ -1,5 +1,13 @@
 import { useTranslations } from "next-intl";
-import { ArrowUpRight, GraduationCap, NotebookPen, Sparkles, Wallet } from "lucide-react";
+import {
+  ArrowUpRight,
+  GraduationCap,
+  NotebookPen,
+  QrCode,
+  ShoppingBag,
+  Wallet,
+  Waypoints,
+} from "lucide-react";
 import { Section } from "@/components/section";
 import { HudCard } from "@/components/hud-card";
 import { Reveal } from "@/components/reveal";
@@ -23,9 +31,11 @@ type Product = {
  */
 const ICONS: Record<string, typeof Wallet> = {
   smartfintrack: Wallet,
-  tuvidauso: Sparkles,
   course: GraduationCap,
   blog: NotebookPen,
+  store: ShoppingBag,
+  pay: QrCode,
+  llm: Waypoints,
 };
 
 /**
@@ -46,7 +56,7 @@ export function Products() {
         <p className="mt-3 text-muted-foreground">{t("lede")}</p>
       </div>
       <Reveal>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {items.map((product) => {
             const Icon = ICONS[product.key];
             return (

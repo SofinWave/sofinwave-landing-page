@@ -33,9 +33,11 @@ describe("Products section", () => {
     renderAt("en");
 
     expect(screen.getByText("SmartFinTrack")).toBeInTheDocument();
-    expect(screen.getByText("Tử Vi Đẩu Số")).toBeInTheDocument();
     expect(screen.getByText("KingNNT Course")).toBeInTheDocument();
     expect(screen.getByText("KingNNT Blog")).toBeInTheDocument();
+    expect(screen.getByText("KingNNT Store")).toBeInTheDocument();
+    expect(screen.getByText("KingNNT Pay")).toBeInTheDocument();
+    expect(screen.getByText("KingNNT LLM")).toBeInTheDocument();
   });
 
   it("links each card out to the live product", () => {
@@ -44,9 +46,11 @@ describe("Products section", () => {
     const hrefs = screen.getAllByRole("link").map((link) => link.getAttribute("href"));
 
     expect(hrefs).toContain("https://smartfintrack.com");
-    expect(hrefs).toContain("https://tuvidauso.kingnnt.org");
     expect(hrefs).toContain("https://course.kingnnt.org");
     expect(hrefs).toContain("https://cms.kingnnt.org");
+    expect(hrefs).toContain("https://store.kingnnt.org");
+    expect(hrefs).toContain("https://payment.kingnnt.org");
+    expect(hrefs).toContain("https://llm.kingnnt.org");
   });
 
   it("links through to the products page", () => {
@@ -79,14 +83,14 @@ describe("Products section", () => {
     renderAt("vi");
 
     expect(screen.getByText(viMessages.products.heading)).toBeInTheDocument();
-    expect(screen.getByText("Luận giải chi tiết bằng AI")).toBeInTheDocument();
+    expect(screen.getByText("Tự động đối soát, không cần khớp tay")).toBeInTheDocument();
   });
 
   it("renders the Chinese catalog under the zh locale", () => {
     renderAt("zh");
 
     expect(screen.getByText(zhMessages.products.heading)).toBeInTheDocument();
-    expect(screen.getByText("AI 详细解读")).toBeInTheDocument();
+    expect(screen.getByText("自动对账，无需人工核对")).toBeInTheDocument();
   });
 });
 

@@ -284,7 +284,7 @@
   },
   "products": {
     "heading": "Products we build and run",
-    "lede": "Three applications and an engineering blog of our own. We carry the cost of running them, which is the only honest way to show we can ship software and keep it alive.",
+    "lede": "Five applications and an engineering blog of our own. We carry the cost of running them, which is the only honest way to show we can ship software and keep it alive.",
     "ctaLabel": "More about our products",
     "items": [
       {
@@ -301,21 +301,6 @@
         ],
         "href": "https://smartfintrack.com",
         "host": "smartfintrack.com"
-      },
-      {
-        "key": "tuvidauso",
-        "name": "Tử Vi Đẩu Số",
-        "blurb": "Casts a Zi Wei Dou Shu astrology chart from a birth date and time — solar or lunar calendar, leap months included — across the twelve palaces with major stars and five elements, then reads it back in detail with AI.",
-        "price": "Free to cast; sign in to save charts",
-        "languages": "Vietnamese / English",
-        "features": [
-          "Chart cast from birth date and time",
-          "Solar or lunar calendar, leap months included",
-          "Twelve palaces, major stars, five elements",
-          "Detailed AI interpretation"
-        ],
-        "href": "https://tuvidauso.kingnnt.org",
-        "host": "tuvidauso.kingnnt.org"
       },
       {
         "key": "course",
@@ -346,6 +331,51 @@
         ],
         "href": "https://cms.kingnnt.org",
         "host": "cms.kingnnt.org"
+      },
+      {
+        "key": "store",
+        "name": "KingNNT Store",
+        "blurb": "An online shop for digital and physical products, with curated gear guides that link out to the items we actually use. Prices are in VND, and digital items are delivered as soon as payment clears.",
+        "price": "Free to browse",
+        "languages": "Vietnamese / English",
+        "features": [
+          "Digital and physical products in one storefront",
+          "Digital items delivered right after payment",
+          "Curated gear guides with affiliate links",
+          "Filter by product type and price"
+        ],
+        "href": "https://store.kingnnt.org",
+        "host": "store.kingnnt.org"
+      },
+      {
+        "key": "pay",
+        "name": "KingNNT Pay",
+        "blurb": "A VietQR payment gateway. One API call creates a payment and returns a checkout page with a QR code prefilled with the amount; the bank transfer is matched to its order automatically and your server is told through a signed webhook.",
+        "price": "API key per project",
+        "languages": "Vietnamese / English",
+        "features": [
+          "Bank transfers via VietQR, from any banking app",
+          "Automatic reconciliation, no manual matching",
+          "Ed25519-signed webhooks, retried on failure",
+          "One payment per order, safe to retry"
+        ],
+        "href": "https://payment.kingnnt.org",
+        "host": "payment.kingnnt.org"
+      },
+      {
+        "key": "llm",
+        "name": "KingNNT LLM",
+        "blurb": "An API key router for AI models. One virtual key reaches Claude and GPT models through a single gateway, with its own budget and limits, and plugs into Claude Code, Codex CLI, the SDKs, or any tool that takes an OpenAI-compatible base URL.",
+        "price": "Issued keys",
+        "languages": "Vietnamese / English",
+        "features": [
+          "Claude and GPT models behind one endpoint",
+          "Virtual keys with their own budgets and limits",
+          "Usage tracking for every key",
+          "Setup guides for Claude Code, Codex CLI, and SDKs"
+        ],
+        "href": "https://llm.kingnnt.org",
+        "host": "llm.kingnnt.org"
       }
     ]
   },
@@ -2019,8 +2049,8 @@
       "navLabel": "Products",
       "title": "Products",
       "metaTitle": "Products — Software SofinWave Builds and Runs",
-      "metaDescription": "SofinWave builds and runs four products of its own: SmartFinTrack, a personal finance manager; Tử Vi Đẩu Số, AI-interpreted Zi Wei Dou Shu astrology charts; KingNNT Course, an e-learning platform for applied AI and programming; and KingNNT Blog, an engineering notebook on backend systems.",
-      "lede": "SofinWave builds and runs four products of its own: SmartFinTrack, a free personal finance manager; Tử Vi Đẩu Số, which casts and interprets Zi Wei Dou Shu astrology charts with AI; KingNNT Course, an e-learning platform for hands-on AI and programming courses; and KingNNT Blog, where our engineers write about backend and AI agent systems. They are built by the same team, to the same standards, as the software we build for clients.",
+      "metaDescription": "SofinWave builds and runs six products of its own: SmartFinTrack, a personal finance manager; KingNNT Course, e-learning; KingNNT Blog, an engineering notebook; KingNNT Store, a shop with gear guides; KingNNT Pay, a VietQR payment gateway; and KingNNT LLM, an API key router for AI models.",
+      "lede": "SofinWave builds and runs six products of its own: SmartFinTrack, a free personal finance manager; KingNNT Course, an e-learning platform for hands-on AI and programming courses; KingNNT Blog, where our engineers write about backend and AI agent systems; KingNNT Store, an online shop with curated gear guides; KingNNT Pay, a VietQR payment gateway that reconciles bank transfers automatically; and KingNNT LLM, which routes one API key to Claude and GPT models. They are built by the same team, to the same standards, as the software we build for clients.",
       "sections": [
         {
           "heading": "SmartFinTrack — personal finance management",
@@ -2032,17 +2062,6 @@
             "Reports and charts"
           ],
           "links": [{ "href": "https://smartfintrack.com", "label": "smartfintrack.com" }]
-        },
-        {
-          "heading": "Tử Vi Đẩu Số — chart casting and AI interpretation",
-          "body": "Zi Wei Dou Shu, or Purple Star astrology, places stars into twelve palaces derived from a birth date and time. The tool does that casting automatically — solar or lunar calendar, leap months included — showing the twelve palaces with their major stars and five elements, then producing a detailed AI reading. Casting a chart is free; signing in saves your charts and unlocks the detailed AI reading. Available in Vietnamese and English.",
-          "bullets": [
-            "Chart cast from birth date and time",
-            "Solar or lunar calendar, leap months included",
-            "Twelve palaces, major stars, five elements",
-            "Detailed AI interpretation"
-          ],
-          "links": [{ "href": "https://tuvidauso.kingnnt.org", "label": "tuvidauso.kingnnt.org" }]
         },
         {
           "heading": "KingNNT Course — hands-on AI and programming courses",
@@ -2067,6 +2086,39 @@
           "links": [{ "href": "https://cms.kingnnt.org", "label": "cms.kingnnt.org" }]
         },
         {
+          "heading": "KingNNT Store — a shop and gear guides",
+          "body": "An online store for the digital and physical products we make, priced in VND. Digital items arrive as soon as payment clears; physical items ship. Alongside the shop sit gear guides — short, curated lists of the equipment and everyday items we actually use, linking out to where to buy them through affiliate links. The store can be browsed without an account, and is available in Vietnamese and English.",
+          "bullets": [
+            "Digital and physical products in one storefront",
+            "Digital items delivered right after payment",
+            "Curated gear guides with affiliate links",
+            "Filter by product type and price"
+          ],
+          "links": [{ "href": "https://store.kingnnt.org", "label": "store.kingnnt.org" }]
+        },
+        {
+          "heading": "KingNNT Pay — a VietQR payment gateway",
+          "body": "Our own gateway for taking bank transfers in Vietnam. Your server creates a payment with an order ID and amount through the API and gets back a checkout link; the customer scans a VietQR code prefilled with the amount and a payment code from any banking app. When the transfer lands it is matched to the order automatically, and a payment.succeeded webhook signed with Ed25519 is sent to your server, retried if it fails. Each order maps to one payment, so retries are safe; return hosts and calling IPs can be restricted, and transfers that cannot be matched go to their own review queue. Projects and API keys are created by an administrator.",
+          "bullets": [
+            "Bank transfers via VietQR, from any banking app",
+            "Automatic reconciliation, no manual matching",
+            "Ed25519-signed webhooks, retried on failure",
+            "One payment per order, safe to retry"
+          ],
+          "links": [{ "href": "https://payment.kingnnt.org", "label": "payment.kingnnt.org" }]
+        },
+        {
+          "heading": "KingNNT LLM — an API key router for AI models",
+          "body": "A gateway that sits between AI tools and the model providers. Each user gets a virtual key from an administrator, with its own budget and limits, and that one key reaches Anthropic's Claude and OpenAI's GPT models through a single endpoint. It works with Claude Code and Codex CLI, with the official SDKs and plain HTTP, and with any editor extension or chat app that accepts an OpenAI-compatible base URL. Usage is tracked for every key, and the setup guide is available in Vietnamese and English.",
+          "bullets": [
+            "Claude and GPT models behind one endpoint",
+            "Virtual keys with their own budgets and limits",
+            "Usage tracking for every key",
+            "Setup guides for Claude Code, Codex CLI, and SDKs"
+          ],
+          "links": [{ "href": "https://llm.kingnnt.org", "label": "llm.kingnnt.org" }]
+        },
+        {
           "heading": "Why we build our own products",
           "body": "Consulting advice is cheap to give and expensive to live with. Running our own applications means we carry the consequences of our own recommendations — the deployment, the bug reports, the cost of keeping something up long after launch. The products are built by the same engineers, on the same stack, under the same standards as client work, which is what makes them evidence rather than decoration."
         }
@@ -2074,11 +2126,11 @@
       "faq": [
         {
           "question": "Are SofinWave's products free?",
-          "answer": "SmartFinTrack is free to use, and casting a chart on Tử Vi Đẩu Số is free. On KingNNT Course the open lessons are free to try; each full course is a one-time purchase with lifetime access. KingNNT Blog is free to read."
+          "answer": "SmartFinTrack is free to use. On KingNNT Course the open lessons are free to try; each full course is a one-time purchase with lifetime access. KingNNT Blog is free to read, and KingNNT Store is free to browse — you pay only for what you buy. KingNNT Pay and KingNNT LLM have no self-serve sign-up: an administrator issues each project or user its own API key."
         },
         {
           "question": "Do I need an account?",
-          "answer": "SmartFinTrack requires an account, because it stores your own financial records. Tử Vi Đẩu Số casts a chart without one; signing in lets you save charts and read the detailed AI interpretation. KingNNT Course needs one to enrol in a course and pick up where you left off. KingNNT Blog can be read without one."
+          "answer": "SmartFinTrack requires an account, because it stores your own financial records. KingNNT Course needs one to enrol in a course and pick up where you left off. KingNNT Blog can be read and KingNNT Store browsed without one. KingNNT Pay and KingNNT LLM work through API keys issued by an administrator."
         },
         {
           "question": "Can SofinWave build something like this for us?",

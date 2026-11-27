@@ -152,7 +152,7 @@ describe("faqSchema", () => {
 });
 
 describe("softwareApplicationSchema", () => {
-  const [smartFinTrack, tuViDauSo, course] = en.products.items.map((product) =>
+  const [smartFinTrack, course, , store, pay, llm] = en.products.items.map((product) =>
     softwareApplicationSchema({
       key: product.key,
       name: product.name,
@@ -178,8 +178,10 @@ describe("softwareApplicationSchema", () => {
 
   it("categorises each product for its own audience", () => {
     expect(smartFinTrack.applicationCategory).toBe("FinanceApplication");
-    expect(tuViDauSo.applicationCategory).toBe("LifestyleApplication");
     expect(course.applicationCategory).toBe("EducationalApplication");
+    expect(store.applicationCategory).toBe("ShoppingApplication");
+    expect(pay.applicationCategory).toBe("FinanceApplication");
+    expect(llm.applicationCategory).toBe("DeveloperApplication");
   });
 
   it("declares the languages the products actually support", () => {
@@ -187,16 +189,18 @@ describe("softwareApplicationSchema", () => {
     expect(smartFinTrack.inLanguage).not.toContain("zh");
   });
 
-  // Courses are sold, so a zero-price offer would misstate them.
+  // Courses and goods are sold and the keyed services have no public price,
+  // so a zero-price offer would misstate them.
   it("claims a free offer only for products that are free", () => {
-    expect(tuViDauSo.offers).toEqual(smartFinTrack.offers);
     expect(course.url).toBe("https://course.kingnnt.org");
-    expect(course.offers).toBeUndefined();
+    for (const node of [course, store, pay, llm]) {
+      expect(node.offers).toBeUndefined();
+    }
   });
 
   // The testimonials are not real yet, and neither are any ratings.
   it("never claims a rating or a review", () => {
-    for (const node of [smartFinTrack, tuViDauSo, course]) {
+    for (const node of [smartFinTrack, course, store, pay, llm]) {
       expect(node.aggregateRating).toBeUndefined();
       expect(node.review).toBeUndefined();
     }
@@ -204,7 +208,7 @@ describe("softwareApplicationSchema", () => {
 });
 
 describe("productSchema", () => {
-  const [smartFinTrack, , , blog] = en.products.items.map((product) =>
+  const [smartFinTrack, , blog] = en.products.items.map((product) =>
     productSchema({
       key: product.key,
       name: product.name,

@@ -247,15 +247,18 @@ export function serviceSchema({
  */
 const PRODUCT_CATEGORIES: Record<string, string> = {
   smartfintrack: "FinanceApplication",
-  tuvidauso: "LifestyleApplication",
   course: "EducationalApplication",
+  store: "ShoppingApplication",
+  pay: "FinanceApplication",
+  llm: "DeveloperApplication",
 };
 
 /**
  * Products that cost nothing to use. Only these get a zero-price `Offer` —
- * KingNNT Course sells its courses, and a price of 0 there would be false.
+ * KingNNT Course sells its courses, the store sells goods, and Pay and LLM are
+ * keyed services with no public price, so a price of 0 there would be false.
  */
-const FREE_PRODUCTS = new Set(["smartfintrack", "tuvidauso"]);
+const FREE_PRODUCTS = new Set(["smartfintrack"]);
 
 /**
  * SoftwareApplication node for one of our own products.

@@ -11,9 +11,11 @@ describe("products catalog", () => {
       it("lists every product in a stable order", () => {
         expect(products.items.map((p) => p.key)).toEqual([
           "smartfintrack",
-          "tuvidauso",
           "course",
           "blog",
+          "store",
+          "pay",
+          "llm",
         ]);
       });
 
@@ -26,9 +28,11 @@ describe("products catalog", () => {
       it("points at the live product hosts over https", () => {
         expect(products.items.map((p) => p.href)).toEqual([
           "https://smartfintrack.com",
-          "https://tuvidauso.kingnnt.org",
           "https://course.kingnnt.org",
           "https://cms.kingnnt.org",
+          "https://store.kingnnt.org",
+          "https://payment.kingnnt.org",
+          "https://llm.kingnnt.org",
         ]);
       });
 
