@@ -49,6 +49,7 @@ mise.local.toml
 *.tsbuildinfo
 next-env.d.ts
 
-# serena
-/.serena/
+# serena: cache and project.local.yml are ignored by .serena/.gitignore;
+# project.yml and memories/ are meant to be versioned.
+
 .superpowers/
